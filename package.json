@@ -26,7 +26,7 @@
     "./strapi-server": "./strapi-server.js"
   },
   "files": [
-    "admin",
+    "dist",
     "server",
     "strapi-admin.js",
     "strapi-server.js",
@@ -35,7 +35,9 @@
   ],
   "strapi": {
     "name": "bubblav",
-    "kind": "plugin"
+    "kind": "plugin",
+    "displayName": "BubblaV",
+    "description": "Setup helper for the BubblaV AI chatbot: token setup guide and deep link into the BubblaV connect flow."
   },
   "publishConfig": {
     "access": "public"
@@ -50,5 +52,12 @@
   },
   "peerDependencies": {
     "@strapi/strapi": "^5"
+  },
+  "scripts": {
+    "build": "esbuild admin/src/index.js --bundle --outfile=dist/admin.js --platform=browser --format=cjs --jsx=automatic --external:react --external:react/* --external:react-dom --external:react-dom/* --external:react-router-dom --external:@strapi/*",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
   }
 }
