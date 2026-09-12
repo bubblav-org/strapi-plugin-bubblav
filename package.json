@@ -1,0 +1,50 @@
+{
+  "name": "strapi-plugin-bubblav",
+  "version": "0.1.0",
+  "description": "Connect your Strapi content to BubblaV, the AI chatbot for your website. Adds a Settings page that walks you through creating a read-only API token and opens the BubblaV connect flow.",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "chatbot",
+    "bubblav"
+  ],
+  "license": "MIT",
+  "author": "BubblaV <support@bubblav.com> (https://www.bubblav.com)",
+  "homepage": "https://www.bubblav.com?utm_source=strapi-market",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubblav-org/strapi-plugin-bubblav.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubblav-org/strapi-plugin-bubblav/issues"
+  },
+  "type": "commonjs",
+  "main": "./strapi-server.js",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": "./strapi-admin.js",
+    "./strapi-server": "./strapi-server.js"
+  },
+  "files": [
+    "admin",
+    "server",
+    "strapi-admin.js",
+    "strapi-server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "strapi": {
+    "kind": "plugin"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=24.x.x",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0",
+    "@strapi/icons": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5"
+  }
+}
