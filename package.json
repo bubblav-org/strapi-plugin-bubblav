@@ -1,5 +1,5 @@
 {
-  "name": "strapi-plugin-bubblav",
+  "name": "@bubblav/strapi-plugin-bubblav",
   "version": "0.1.0",
   "description": "Connect your Strapi content to BubblaV, the AI chatbot for your website. Adds a Settings page that walks you through creating a read-only API token and opens the BubblaV connect flow.",
   "keywords": [
@@ -34,7 +34,11 @@
     "LICENSE"
   ],
   "strapi": {
+    "name": "bubblav",
     "kind": "plugin"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=18.0.0 <=24.x.x",

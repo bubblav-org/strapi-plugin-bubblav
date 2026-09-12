@@ -1,6 +1,6 @@
 # BubblaV for Strapi
 
-`strapi-plugin-bubblav` connects your Strapi content to [BubblaV](https://www.bubblav.com?utm_source=strapi-market), the AI chatbot for your website. It adds a **BubblaV** page under **Settings > Global settings** in your Strapi admin panel with a step-by-step setup guide and a one-click link into the BubblaV connect flow.
+`@bubblav/strapi-plugin-bubblav` connects your Strapi content to [BubblaV](https://www.bubblav.com?utm_source=strapi-market), the AI chatbot for your website. It adds a **BubblaV** page under **Settings > Global settings** in your Strapi admin panel with a step-by-step setup guide and a one-click link into the BubblaV connect flow.
 
 The plugin is a pure setup helper: it stores nothing in Strapi, registers no API routes, and collects no telemetry. Your Strapi instance never calls BubblaV and BubblaV never writes to Strapi. After setup, BubblaV searches your content server-to-server through the standard Strapi REST API using the read-only token you create below.
 
@@ -20,7 +20,7 @@ The plugin is a pure setup helper: it stores nothing in Strapi, registers no API
 1. Install the plugin and rebuild:
 
    ```sh
-   npm install strapi-plugin-bubblav
+   npm install @bubblav/strapi-plugin-bubblav
    npm run build
    npm run develop
    ```
